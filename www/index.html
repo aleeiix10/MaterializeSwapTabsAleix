@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta http-equiv="Content-Security-Policy" content="default-src https://code.jquery.com https://fonts.gstatic.com 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta http-equiv="Content-Security-Policy" content="default-src https://code.jquery.com https://fonts.gstatic.com 'self' data: https://api.spaceflightnewsapi.net gap: https://ssl.gstatic.com 'unsafe-eval'; style-src https://fonts.googleapis.com 'self' 'unsafe-inline'; media-src *; img-src * 'self' data: content:;">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -45,77 +45,19 @@
 
   
   <ul id="tabs-swipe-demo" class="tabs">
-    <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-    <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
+    <li class="tab col s3"><a href="#test-swipe-1"><i class="material-icons">search</i></a></li>
+    <li class="tab col s3"><a href="#test-swipe-2">Test 2</a></li>
     <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
   </ul>
-  <div id="test-swipe-1" class="col s12 blue">Test 1</div>
-  <div id="test-swipe-2" class="col s12 red">Test 2</div>
-  <div id="test-swipe-3" class="col s12 green">
-    <div class="container tabs-content">
-        <div class="section">
-    
-          <!--   Icon Section   -->
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">library_books</i></h2>
-                <h5 class="center">La Primera Federación, en grave crisis</h5>
-    
-                <p class="light">La Primera Federación podría tener las horas y las jornadas contadas. Después de dos años inmersos en una etapa experimental, la división y polarización de los clubes de la categoría abocan a un suicidio colectivo y a su desaparición en las próximas temporadas.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">library_books</i></h2>
-                <h5 class="center">“Haaland vale 1.000 millones”</h5>
-    
-                <p class="light">Rafaela Pimenta (Sao Paulo, 1972) dejó de lado una brillante carrera como abogada por vivir una aventura en el fútbol que le llevó a conocer a Mino Raiola en 1998 y ser su socia durante 25 años. El despacho del superagente fallecido sigue intacto, tal y como él lo dejó. En él está su hijo mayor Mario (21), enfrascado en la pantalla de su portátil y en compañía de Mío, el perro de la familia.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">library_books</i></h2>
-                <h5 class="center">Oficial: Bellerín ficha por el Sporting</h5>
-    
-                <p class="light">Héctor Bellerín acudió esta mañana a la Ciutat Esportiva para recoger la taquilla y despedirse de sus compañeros. El jugador aceptó la oferta del Sporting de Lisboa y viajó hoy mismo a la capital portuguesa, donde, tras el pertinente reconocimiento médico y la firma de los contratos, fue presentado como nuevo león. Su marcha estaba ya prácticamente cantada desde el momento que el club luso confirmó el traspaso de Pedro Porro al Tottenham.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">library_books</i></h2>
-                <h5 class="center">Gavi ya está inscrito en LaLiga por orden judicial: llevará el 6</h5>
-    
-                <p class="light">Gavi ya está inscrito en LaLiga como jugador del primer equipo del Barça. Según adelantó La Vanguardia, el Barça podría inscribir en LaLiga a Gavi como jugador del primer equipo, después de que el juez número 10 de lo mercantil de Barcelona haya fallado a favor del Barça, una vez que el conjunto culé recurriera el pasado viernes a la justicia para poder inscribir a su jugador, tras la negativa de Tebas a aceptar el nuevo contrato del centrocampista, al considerar que estarían saltándose el fair play financiero.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">library_books</i></h2>
-                <h5 class="center">Guerra Ucrania - Rusia, última hora hoy en directo: Golpe de Austria y Hungría a Ucrania</h5>
-    
-                <p class="light">Doce soldados alemanes heridos por un choque accidental de tanques
-    
-                  Un choque accidental de carros blindados Puma en un ejercicio de rutina del Ejército alemán causó heridas a doce soldados, uno de los cuales se encuentra grave aunque no en peligro de muerte.</p>
-              </div>
-            </div>
-    
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">library_books</i></h2>
-                <h5 class="center">Imprescindible De Paul</h5>
-    
-                <p class="light">Simeone ensayó un once ante el Getafe con el argentino como interior derecho. De Paul fue el mejor contra Osasuna y el Cholo seguirá confiando en él. Correa, Morata y Griezmann, tridente en ataque.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div id="test-swipe-1" class="col s12">
+    <button id="listNoticies"><i class="material-icons">search</i></button>
+    <div class="collection"></div>
+  </div>
+  <div id="test-swipe-2" class="col s12"></div>
+  <div id="test-swipe-3" class="col s12">
+    <div class="row">
+      
+    </div>
   </div>
 
 
@@ -127,6 +69,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    
+  </script>
   </body>
 </html>
